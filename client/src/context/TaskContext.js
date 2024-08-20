@@ -1,4 +1,6 @@
 import React, { createContext, useReducer } from 'react';
+import { useEffect } from 'react';
+import { taskReducer } from '../reducers/TaskReducers';
 
 
 export const TaskContext = createContext();
@@ -7,7 +9,7 @@ export const TaskContext = createContext();
 const TaskContextProvider = (props) => {
     const [tasks, dispatch] = useReducer(taskReducer,[]);
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/tasks_app')
+        fetch('http://127.0.0.1:8000/task_app/')
             .then((response) => {
                 if (response.ok) {
                     return response.json();
@@ -25,7 +27,7 @@ const TaskContextProvider = (props) => {
 
     return (
         <TaskContext.Provider value={{ tasks, dispatch }}>
-            
+
             {props.children}
         </TaskContext.Provider>
     );
