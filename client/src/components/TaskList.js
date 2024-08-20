@@ -18,8 +18,8 @@ const TaskList = () => {
         .catch((err) => {
             console.log('Error in fetch')
             // setError('Error fetching Tasks')
-        }, []);
-    })
+        });
+    },[])
     
 
   return (
