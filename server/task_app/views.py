@@ -13,5 +13,16 @@ def task_list(request):
         serializer = TaskSerializer(tasks, many=True)
         return Response(serializer.data)
     
+    elif request.method == 'POST':
+        serializer = TaskSerializer(data=request.data)
+        if serializer.is_valid():
+            task = serializer.save()
+            response_data = {
+                'message': 'Task created successfully',
+                'data':serializer.data,
+            }
+            return Response(response_data,status=201)
+        return Response(serializer.errors, status=400)
+    
 
 
