@@ -31,7 +31,6 @@ const TaskList = () => {
                     <li key={tasks.id}
                     className='bg-white p-4'>
                         {tasks.name}
-                
 
                     </li>
                 ))
