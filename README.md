@@ -11,7 +11,7 @@ A Task management application that allows users to add, view, and delete tasks. 
 ## Tech Stack
 * Frontend: React,Tailwind
 * Backend: Django, Django REST Framework
-* Database: SQLite (or specify your database)
+* Database: SQLite.
 * State Management: useContext, Reducers
 
 
