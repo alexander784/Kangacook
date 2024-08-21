@@ -19,18 +19,18 @@ const TaskList = () => {
     };
 
     return (
-        <div className='mt-8'>
-            <h2 className='text-2xl font-semibold text-gray-700 mb-4'>Your Tasks</h2>
-            <ul className='space-y-2'>
+        <div className='p-10'>
+            <h2 className='flex justify-center text-2xl font-semibold text-gray-700 mb-4'>Your Tasks</h2>
+            <ul className=''>
                 {tasks.length ? (
                     tasks.map((task) => (
                         <li key={task.id}
-                         className='bg-white p-4 border rounded shadow-sm'>
+                         className='flex bg-red-300  p-4 rounded shadow   justify-center space-y-5'>
                             <div className='flex justify-between items-center'>
-                                <span>{task.name}</span>
+                                <span className=''>{task.name}</span>
                                 <button 
                                     onClick={() => handleDelete(task.id)} 
-                                    className='bg-red-500 text-white px-2 py-1 rounded'
+                                    className='bg-red-600 text-white px-2 py-1 rounded'
                                 >
                                     Delete
                                 </button>

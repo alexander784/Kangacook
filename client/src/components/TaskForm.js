@@ -33,22 +33,24 @@ const TaskForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input 
-                type='text' 
-                value={taskName}
-                onChange={(e) => setTaskName(e.target.value)}
-                placeholder='Enter task'
-                required
-                className="border rounded p-2 mr-2"
-            />
-            <button 
-                className="bg-purple-400 rounded-sm w-20 h-10"
-                type='submit'>
-                Add Task
-            </button>
-        </form>
+        <div className="flex items-center justify-center">
+            <form onSubmit={handleSubmit} className="bg-white p-6 border rounded shadow-md">
+                <input 
+                    type='text' 
+                    value={taskName}
+                    onChange={(e) => setTaskName(e.target.value)}
+                    placeholder='Enter task'
+                    required
+                    className="border rounded p-2 mr-2"
+                />
+                <button 
+                    className="bg-purple-400 rounded-sm w-20 h-10"
+                    type='submit'>
+                    Add Task
+                </button>
+            </form>
+        </div>
     );
-};
+}
 
 export default TaskForm;
