@@ -4,8 +4,9 @@ A Task management application that allows users to add, view, and delete tasks. 
 ## Features
 1. Add new task.
 2. VIews a list of all tasks.
-3. Delete taskResponsive UI Built with React.
-4. Restful API built eith Django.
+3. Delete task
+4. Responsive UI Built with React.
+5. Restful API built eith Django.
 
 ## Tech Stack
 * Frontend: React,Tailwind
@@ -24,14 +25,15 @@ A Task management application that allows users to add, view, and delete tasks. 
 
 ## Backend SetUp
   1. Clone the repo: <br>
-  ``git clone https://github.com/alexander784/Kangacook.git``
+  ``git clone https://github.com/alexander784/Kangacook.git`` <br>
   ``cd Kangacook``
 
-  2. Install depencies: <br>
+  2. Install dependecies: <br>
   ``pip install -r requirements.txt``
 <br>
   3. Run migrations and start the djano development server.
-  ``python3 manage.py migrate`` <br>
+
+   ``python3 manage.py migrate`` <br>
   ``python3 manage.py runserver``
 
 
@@ -40,17 +42,17 @@ A Task management application that allows users to add, view, and delete tasks. 
 1. Navigate to the frontend directory: <br>
 `cd client`
 
-2. Install dependecies.
+2. Install dependecies. <br>
 `npm install`
 
-3. Start the React development server:
+3. Start the React development server:<br>
 `npm start`
 
 ## Usage
  ## Adding a New Task
-  1. Go to the "Add Task" section on the homepage. <br>
+  1. Go to the `Add Task` section on the homepage. <br>
   2. Enter the task title and description.
-  3. Click the "Add Task" button to submit.
+  3. Click the `Add Task` button to submit.
 
   ## Viewing Tasks
   1. All tasks are listed on the homepage.
@@ -70,9 +72,9 @@ A Task management application that allows users to add, view, and delete tasks. 
 
 
 ## API Endpoints:
-* GET /api/tasks/: Fetch all tasks
-* POST /api/tasks/: Add a new task
-* DELETE /api/tasks/{id}/: Delete a task by ID
+`` GET /task_app/: Fetch all tasks``<br>
+`` POST /task_app/: Add a new task``<br>
+`` DELETE /tasks_app/{id}/: Delete a task by ID`` <br>
 
 ## Author: Alexander Nyaga.
 
